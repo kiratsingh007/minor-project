@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excellence Coaching Academy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Excellence Coaching Academy</h1>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('about')">About</a>
+      <a href="#" onclick="showPage('signup')">Signup</a>
+      <a href="#" onclick="showPage('login')">Login</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+      <a href="notice.html">NOTICE</a>  
+      <a href="notes.html">NOTES</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME PAGE -->
+   <section id="home" class="home-section">
+  <div class="home-container">
+    <div class="home-hero">
+      <h1>Your Journey to Academic Excellence Starts Here.</h1>
+      <p>
+        We provide personalized mentorship and advanced tracking tools to ensure
+        every student achieves their highest potential in competitive exams and
+        school academics.
+      </p>
+      <a href="#signup" class="cta-button">Enroll Now & Start Tracking!</a>
+    </div>
+
+    <div class="home-features">
+      <div class="feature-card">
+        <i class="fa-solid fa-user-tie"></i>
+        <h3>Expert Faculty</h3>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Performance Analytics</h3>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>Comprehensive Material</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" style="display:none;">
+      <h2>Meet Our Expert Faculty</h2>
+      <div class="teachers-grid">
+        <div class="teacher-card">
+         
+          <h3>Mr. Rajesh Kumar</h3>
+          <p class="subject">Physics Faculty</p>
+          <p>Over 10 years of experience in JEE & NEET physics. Known for making complex concepts crystal clear.</p>
+        </div>
+
+        <div class="teacher-card">
+          
+          <h3>Mrs. Nidhi Sharma</h3>
+          <p class="subject">Chemistry Faculty</p>
+          <p>Expert in Physical & Organic Chemistry with 8+ years of teaching experience. Focuses on logic and applications.</p>
+        </div>
+         <div class="teacher-card">
+          
+          <h3>Mr. mankirat singh</h3>
+          <p class="subject">  Accounts Faculty</p>
+          <p></p>
+        </div>
+         <div class="teacher-card">
+          
+          <h3>Mrs. priyanka Sharma</h3>
+          <p class="subject"> english Faculty</p>
+          <p></p>
+        </div>
+
+        <div class="teacher-card">
+         
+          <h3>Mr. Aman Verma</h3>
+          <p class="subject">Mathematics Faculty</p>
+          <p>Specialist in competitive mathematics, ensures strong fundamentals and exam-oriented problem-solving skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNUP PAGE -->
+    <section id="signup" style="display:none;">
+      <h2>Signup</h2>
+    
+      <form id="signupForm">
+  <input type="text" id="signupUsername" placeholder="Enter Username" required>
+  <input type="password" id="signupPassword" placeholder="Enter Password" required>
+  <button type="submit">Sign Up</button>
+</form>
+
+    </section>
+
+    <!-- LOGIN PAGE -->
+    <section id="login">
+      <h2>Login</h2>
+      <form onsubmit="event.preventDefault(); login();">
+        <input type="text" id="loginUser" placeholder="Enter Username" required /><br>
+        <input type="password" id="loginPass" placeholder="Enter Password" required /><br>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" style="display:none;">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="contactName" placeholder="Your Name" required /><br>
+        <input type="email" id="contactEmail" placeholder="Your Email" required /><br>
+        <input type="text" id="contactPhone" placeholder="Phone (optional)" /><br>
+        <textarea id="contactMessage" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  
+
+  
+
+  <footer>
+    <p>&copy; 2025 Excellence Coaching Academy | All Rights Reserved</p>
+  </footer>
+
+  <script src="jav.js"></script>
+</body>
+</html>

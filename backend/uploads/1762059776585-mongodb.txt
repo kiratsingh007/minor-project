@@ -1,0 +1,147 @@
+1. MongoDB Basics (Core Foundations)
+
+These are the building blocks you must understand first:
+
+📘 What is MongoDB?
+
+NoSQL vs SQL
+
+Documents, Collections, Databases
+
+BSON (Binary JSON)
+
+📗 Installation & Setup
+
+Install MongoDB locally or use MongoDB Atlas (Cloud)
+
+Use the MongoDB Shell or Compass GUI
+
+📙 CRUD Operations
+
+Create → insertOne(), insertMany()
+
+Read → find(), findOne(), query filters ($gt, $lt, $in, $and, $or)
+
+Update → updateOne(), updateMany(), $set, $inc
+
+Delete → deleteOne(), deleteMany()
+
+📘 Data Types in MongoDB
+
+String, Number, Boolean, Date, ObjectId, Array, Embedded Documents
+
+📗 Indexes
+
+Why indexes matter
+
+Creating and using indexes (createIndex())
+
+🟡 2. Intermediate Concepts
+
+Once you’re comfortable with CRUD and data handling:
+
+🧩 Schema Design
+
+Embedding vs Referencing
+
+One-to-One, One-to-Many, Many-to-Many relationships
+
+Normalization vs Denormalization
+
+🔍 Aggregation Framework
+
+-    $match, $group, $project, $sort, $limit, $lookup
+
+Pipelines for analytics (sum, average, group by)
+
+⚙️ Data Validation
+
+Using Schema Validation in MongoDB
+
+JSON Schema
+
+🗄️ Indexes (Advanced)
+
+Compound indexes, text indexes, geospatial indexes
+
+🔒 Security
+
+User roles, authentication, and authorization
+
+Connection strings and environment variables
+
+🔵 3. Advanced MongoDB Concepts
+
+For optimizing and managing real projects:
+
+🚀 Performance & Optimization
+
+Query optimization
+
+Explain plans (.explain())
+
+Caching strategies
+
+🔄 Replication & Sharding
+
+Replica sets (for redundancy)
+
+Sharding (for large-scale data)
+
+🧰 Backup & Restore
+
+mongodump, mongorestore
+
+🧮 Transactions
+
+Multi-document ACID transactions
+
+🟣 4. MongoDB with Node.js / Express (Full Stack Integration)
+
+This is where you connect backend to database — essential for full-stack devs:
+
+🔗 Connect MongoDB with Node.js
+
+Using the official MongoDB Driver
+
+Or using Mongoose (ODM library)
+
+🧱 Mongoose Essentials
+
+Schemas & Models
+
+CRUD using Mongoose
+
+Middleware (pre/post hooks)
+
+Virtuals & Population (for relationships)
+
+🧑‍💻 Building REST APIs
+
+Create CRUD API endpoints with Express + Mongoose
+
+Example: GET /users, POST /users, etc.
+
+Error handling and validation
+
+⚙️ Environment Setup
+
+.env configuration for DB_URI
+
+Using dotenv package
+
+🔐 Authentication
+
+JWT (JSON Web Tokens) + MongoDB for user login/signup
+
+🔴 5. MongoDB in Real Projects
+
+Once you’ve covered the fundamentals, apply them in real apps:
+
+🌦️ Weather App (save user searches in MongoDB)
+
+🛒 E-commerce Store (users, products, orders)
+
+🧾 Blog Application (posts, comments, users)
+
+👥 Chat App (real-time messages with MongoDB + Socket.io)

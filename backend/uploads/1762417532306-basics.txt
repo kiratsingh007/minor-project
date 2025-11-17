@@ -1,0 +1,78 @@
+Open a new Command Prompt window (don’t close the server one)
+Then type:
+
+mongosh
+
+
+If everything’s set up correctly, you’ll see:
+
+Current Mongosh Log ID: ...
+Connecting to: mongodb://127.0.0.1:27017/
+
+
+Now you’re inside MongoDB! 🎉
+
+🟣 Step 3 — Test Basic Commands
+
+Try these commands one by one:
+
+show dbs
+
+
+→ Shows all databases.
+
+use testDB
+
+
+→ Switches (or creates) a database named testDB.
+
+db.createCollection("students")
+
+
+→ Creates a collection (like a table).
+
+db.students.insertOne({ name: "Raghav", course: "Full Stack" })
+
+
+→ Adds one document.
+
+db.students.find()
+
+
+→ Displays the data.
+---------------------------------------------------------------------------------
+🧩 The Databases You See by Default
+
+When you typed:
+
+show dbs
+
+
+You saw:
+
+admin
+config
+local
+
+
+Here’s what they mean:
+
+Database	Purpose
+admin	Used for administrative commands (like adding users or managing roles).
+config	Stores information about MongoDB’s internal cluster setup (you don’t need to edit it).
+local	Keeps local server data such as replication info — not replicated across servers.
+
+✅ These three always exist by default — you didn’t create them.
+Now you’ll start creating your own databases (like students, users, products, etc.)
+----------------------------------------------------------------------------------------
+🪄 Pro Tip
+
+If you ever forget:
+
+which database you’re in → db
+
+what collections it has → show collections
+
+what data’s inside → db.collectionName.find()
+
+That’s it! Just those 3 commands help you explore everything you’ve created.

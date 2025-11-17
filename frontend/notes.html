@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h2>📘 Upload Notes</h2>
+    <nav>
+      <a href="studentview.html"> student can view </a>
+    </nav>
+  </header>
+
+  <main class="upload-container">
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="noteFile" name="file" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <div id="message"></div>
+
+    <h3>📂 Uploaded Notes</h3>
+    <ul id="notesList"></ul>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
